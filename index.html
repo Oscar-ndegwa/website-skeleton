@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salome's site — Scholar | Educator | Researcher</title>
+    <meta name="description" content="Official site of Salome — Senior Lecturer at JOOUST. Scholar, educator and researcher in religion, philosophy and African development." />
+    <meta name="author" content="Salome" />
+
+    <meta property="og:title" content="Salome's site" />
+    <meta property="og:description" content="Scholar | Educator | Researcher" />
+    <meta property="og:type" content="profile" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Reading progress bar -->
+    <div id="progress-bar" class="progress-bar" aria-hidden="true"></div>
+
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">Salome's site</a>
+        <div class="nav-actions">
+          <button id="search-open" class="nav-search-btn" aria-label="Open search">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span>Search</span>
+          </button>
+          <button id="theme-toggle" class="nav-theme-btn" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#books">Books</a>
+          <a href="#contact">Contacts</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SEARCH OVERLAY -->
+    <div id="search-overlay" class="search-overlay" aria-hidden="true" role="dialog" aria-label="Search the site">
+      <div class="search-box">
+        <div class="search-input-row">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="search-input" type="search" placeholder="Search books, articles, gallery, about…" autocomplete="off" />
+          <button id="search-close" class="search-close" aria-label="Close search">&times;</button>
+        </div>
+        <div id="search-results" class="search-results" aria-live="polite">
+          <p class="search-hint">Start typing to search the whole site.</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-inner reveal">
+          <p class="welcome">Welcome to</p>
+          <h1 class="hero-title">Salome's site</h1>
+
+          <div class="hero-photo">
+            <img src="profile.jpg" alt="Salome" />
+          </div>
+
+          <div class="roles-pill"><span id="typewriter">SCHOLAR</span><span class="cursor" aria-hidden="true">|</span></div>
+
+          <a href="#contact" class="btn btn-primary">Contact-Me</a>
+
+          <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+            <span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="profile.jpg" alt="Salome" />
+          </div>
+          <div class="about-bio">
+            <ul class="stat-row">
+              <li><span class="stat-num" data-count="20">0</span><span class="stat-label">Years teaching</span></li>
+              <li><span class="stat-num" data-count="15">0</span><span class="stat-label">Publications</span></li>
+              <li><span class="stat-num" data-count="4">0</span><span class="stat-label">Degrees earned</span></li>
+            </ul>
+            <p>
+              <strong>Salome</strong> is a Senior Lecturer at Jaramogi Oginga Odinga
+              University of Science and Technology, and former Coordinator of the East African
+              Community Integration Institute (EACII) within the University. He holds an
+              interdisciplinary PhD from Radboud University Nijmegen (Netherlands) on anthropology,
+              theology and philosophy. He also holds an MA Degree in Philosophy from the Catholic
+              University of Eastern Africa (CUEA) as well as BPh and BTh from Urbanian Pontifical
+              University (Rome).
+            </p>
+            <p>
+              His research interests focus on the religious and philosophical dimensions of
+              development in Africa. He tries to identify the cultural-religious values in Africa
+              that hinder or promote entrepreneurship in the quest for development and how these
+              can be successfully embedded in modern planning for participatory development,
+              through technology transfer without reinventing the wheel.
+            </p>
+            <p>
+              He has authored several articles, among them <em>‘Culture and value trade-offs for
+              successful entrepreneurship in Africa’</em> (2017), <em>‘Tropical Greenhouses: A Great
+              Opportunity for Small Farmers — Drivers and barriers for agricultural innovation’</em>
+              (2017), <em>‘Economically feasible, but not financially sound? The end of neo-liberalism
+              and the start of Doing Business’</em> (2017) and <em>‘Capacities, Development and
+              Responsible Innovation’</em> (2015).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section section-alt reveal">
+        <h2>Gallery</h2>
+        <div class="gallery-grid reveal-stagger">
+          <figure class="gallery-item">
+            <div class="gallery-img" style="background-image: linear-gradient(135deg, #6e2a2a 0%, #2a0808 100%);"></div>
+            <figcaption>
+              <h3>Salome and Colleagues</h3>
+              <p><em>"Salome enjoying time with her colleagues!"</em></p>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-img" style="background-image: linear-gradient(135deg, #8b3a2a 0%, #2a0808 100%);"></div>
+            <figcaption>
+              <h3>Salome at Work</h3>
+              <p><em>"Salome at her workplace!"</em></p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- BOOKS -->
+      <section id="books" class="section reveal">
+        <h2>Published Book</h2>
+        <div class="single-book reveal-stagger">
+          <div class="book-cover-wrap">
+            <div class="book-cover">
+              <span class="book-cover-title">The Silent Echo</span>
+              <span class="book-cover-author">SALOME</span>
+            </div>
+          </div>
+          <div class="book-details">
+            <h3 class="book-headline">The Silent Echo</h3>
+            <p class="book-tag"><em>A debut novel — a haunting story of memory, silence, and the spaces between the words we never said.</em></p>
+            <p class="book-blurb">
+              When a woman returns to the coastal village of her childhood, she finds a house full of letters
+              she never sent and a sea that still remembers her name. <em>The Silent Echo</em> is a quiet,
+              luminous novel about the things we carry — and the things that carry us.
+            </p>
+            <ul class="book-meta">
+              <li><strong>Genre</strong><span>Literary Fiction</span></li>
+              <li><strong>Pages</strong><span>312</span></li>
+              <li><strong>Released</strong><span>March 2025</span></li>
+              <li><strong>Publisher</strong><span>Northlight Press</span></li>
+            </ul>
+            <p class="chapters-hint">Click any chapter below to read a preview.</p>
+            <ul class="chapter-list">
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">01</span>
+                  <span class="ch-title">The House by the Sea</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>Salome arrives at dusk. The key still fits, though the lock has rusted into a new shape. Inside, the air smells of salt and old paper, and something she cannot yet name.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">02</span>
+                  <span class="ch-title">Letters Never Sent</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>In the top drawer of her mother's desk, a stack of envelopes — addressed, stamped, never mailed. Each one begins with the same two words: Forgive me.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">03</span>
+                  <span class="ch-title">The Fisherman's Daughter</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>Mira has not aged the way Salome imagined. She is sharper now, sea-worn and certain, and she remembers things Salome had hoped were forgotten.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">04</span>
+                  <span class="ch-title">Tide Marks</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>The cliffs keep score. Every winter writes a new line into the stone, and Salome begins to understand that her family has been writing here too.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">05</span>
+                  <span class="ch-title">The Lighthouse Keeper</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>He speaks little, and only at night. But what he says, the morning cannot unsay.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">06</span>
+                  <span class="ch-title">A Photograph, Folded</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>Behind the photograph she has carried for twenty years, another face — one she has never seen, and somehow always known.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">07</span>
+                  <span class="ch-title">The Storm</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>It comes from the north, the way the old stories said it would. By morning, the village is changed. By afternoon, so is Salome.</p></div>
+              </li>
+              <li class="chapter-item">
+                <button class="chapter-toggle" aria-expanded="false">
+                  <span class="ch-num">08</span>
+                  <span class="ch-title">The Silent Echo</span>
+                  <span class="ch-plus" aria-hidden="true">+</span>
+                </button>
+                <div class="chapter-body"><p>Some answers do not arrive as words. Some arrive as weather, as light on water, as the long, patient quiet that follows a question finally asked.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section reveal">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <ul class="contact-list">
+            <li><span class="ico">📍</span><span>Based in Washington DC, Boston, USA</span></li>
+            <li>
+              <span class="ico">✉️</span>
+              <a href="mailto:hello@salome.com">hello@salome.com</a>
+              <button class="copy-btn" data-copy="hello@salome.com" aria-label="Copy email">⧉</button>
+            </li>
+            <li>
+              <span class="ico">📞</span>
+              <a href="tel:+17743795983">+1 (774) 379-5983</a>
+              <button class="copy-btn" data-copy="+1 (774) 379-5983" aria-label="Copy phone">⧉</button>
+            </li>
+            <li><span class="ico">🕘</span><span>Monday – Friday: 9:00 AM – 5:00 PM</span></li>
+            <li><span class="ico">🕘</span><span>Saturday: 9:00 AM – 3:00 PM</span></li>
+            <li><span class="ico">⛪</span><span>Sunday: Church day</span></li>
+            <li><span class="ico">🌐</span><a href="#">www.boston.com</a></li>
+          </ul>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <h3 class="contact-form-title">Send a message</h3>
+            <p class="contact-form-sub">Have a question or want to get in touch? Fill in the form below.</p>
+
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+              <span class="form-error" data-error-for="name"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="255" required />
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" maxlength="1000" required></textarea>
+              <div class="form-meta">
+                <span class="form-error" data-error-for="message"></span>
+                <span class="form-counter"><span id="cf-count">0</span>/1000</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+            <div id="cf-success" class="form-success" hidden>
+              <span class="ico">✅</span>
+              <span>Thanks, <strong id="cf-success-name">friend</strong>! Your message has been received. Salome will get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Salome. All rights reserved.</p>
+      <p class="footer-socials">
+        <a href="#" aria-label="Twitter">Twitter</a> ·
+        <a href="#" aria-label="LinkedIn">LinkedIn</a> ·
+        <a href="#" aria-label="Email" data-copy="hello@salome.com">Email</a>
+      </p>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>↑</button>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <div class="lightbox-content"></div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
