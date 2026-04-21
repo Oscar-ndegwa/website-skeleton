@@ -37,6 +37,18 @@ body, .nav, .nav-inner, .gallery-item, .book-card, .chapter-item,
 }
 
 html { scroll-behavior: smooth; }
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* The ultimate safety net */
+  position: relative;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Poppins', system-ui, -apple-system, sans-serif;
@@ -313,6 +325,8 @@ a:hover { color: var(--orange-dark); }
 .contact-list .ico { font-size: 20px; flex-shrink: 0; }
 .contact-list a { color: var(--cream); font-weight: 500; }
 .contact-list a:hover { color: var(--orange); }
+/* --- Add this at the very end of your CSS file --- */
+
 
 /* ---------- Footer ---------- */
 .footer {
@@ -846,4 +860,140 @@ body.search-open { overflow: hidden; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-photo { animation: none; }
+}
+.about-grid {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    flex-direction: row; /* Side-by-side on desktop */
+  }
+}
+
+.stat-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to next line */
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.stat-row li {
+  flex: 1 1 120px; /* Grow/shrink, but try to stay around 120px */
+  text-align: center;
+}
+.nav-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-overlay {
+  position: fixed;
+  inset: 0; /* Pins to top, bottom, left, and right */
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 600px; /* Ensures it never goes full-width on big screens */
+  margin: 0 auto;
+}
+/* Force long text/links to break instead of pushing the container */
+p, a, h1, h2, h3, .book-title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure buttons don't get too wide for small screens */
+.btn {
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal; /* Allows text inside button to wrap if name is long */
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  width: 100%; /* Ensures item stays inside grid cell */
+  margin: 0;
+}
+/* Stack columns on mobile, side-by-side on desktop */
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: 100%; /* Prevent container overflow */
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    flex-direction: row;
+  }
+}
+
+/* Fix for long contact strings (Email/Phone/Address) */
+.contact-list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 1rem;
+  word-break: break-all; /* Forces long emails to wrap */
+  overflow-wrap: break-word;
+}
+
+.contact-list span, 
+.contact-list a {
+  max-width: calc(100% - 40px); /* Subtracts icon width to keep text contained */
+}
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Crucial: Ensure inputs never exceed the width of their parent row */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%; 
+  display: block;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color); /* Use your variable name here */
+}
+
+/* Fix for the success message box */
+.form-success {
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 1rem;
+  margin-top: 1rem;
 }
